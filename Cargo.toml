@@ -1,7 +1,16 @@
 [package]
 name = "benchmark-counters"
 version = "0.1.0"
+authors = ["Thomas Niederberger <thomas@niederb.ch>"]
 edition = "2021"
+license = "MIT OR Apache-2.0"
+
+description = "Light-weight data structures to help with monitoring and benchmarking."
+readme = "README.md"
+homepage = "https://github.com/niederb/benchmark-counters"
+repository = "https://github.com/niederb/benchmark-counters"
+keywords = ["benchmark", "performance"]
+categories = ["data-structures"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
