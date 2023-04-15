@@ -7,7 +7,10 @@ pub struct StopWatch {
 
 impl StopWatch {
     pub fn new() -> Self {
-        return Self { start_time: None, elapsed: Duration::default() }
+        Self {
+            start_time: None,
+            elapsed: Duration::default(),
+        }
     }
 
     pub fn start(&mut self) {
@@ -33,5 +36,11 @@ impl StopWatch {
 
     pub fn is_running(&self) -> bool {
         self.start_time.is_some()
+    }
+}
+
+impl Default for StopWatch {
+    fn default() -> Self {
+        Self::new()
     }
 }
